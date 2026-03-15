@@ -29,7 +29,7 @@ const Index = () => {
           }
         });
       },
-      { rootMargin: "-40% 0px -40% 0px" }
+      { rootMargin: "-40% 0px -40% 0px" },
     );
 
     sections.forEach((s) => {
@@ -48,14 +48,18 @@ const Index = () => {
           {/* Left Column - Sticky */}
           <header className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 pt-24 pb-8">
             <div>
-              <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl" style={{ letterSpacing: "-0.03em" }}>
-                Tomas Nageh Adly
+              <h1
+                className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl"
+                style={{ letterSpacing: "-0.03em" }}
+              >
+                Thomas Nageh
               </h1>
               <h2 className="mt-3 text-lg font-medium tracking-tight text-foreground/80">
                 Software Engineer
               </h2>
               <p className="mt-4 max-w-xs text-sm leading-normal text-dim">
-                I build robust, accessible digital experiences for the web using modern technologies.
+                I build robust, accessible digital experiences for the web using
+                modern technologies.
               </p>
 
               <nav className="mt-16 hidden lg:block">
@@ -120,7 +124,9 @@ const Index = () => {
             {/* About */}
             <section
               id="about"
-              ref={(el) => { sectionRefs.current.about = el; }}
+              ref={(el) => {
+                sectionRefs.current.about = el;
+              }}
               className="mb-24 scroll-mt-24"
             >
               <h2 className="mb-4 text-sm font-bold uppercase tracking-widest text-foreground lg:hidden">
@@ -128,27 +134,32 @@ const Index = () => {
               </h2>
               <div className="space-y-4 text-sm leading-relaxed text-dim">
                 <p>
-                  Dedicated Software Engineer with experience in developing web and software applications using
-                  C, C++, C#, Python, and .NET technologies. Knowledgeable in Entity Framework, SQL, and MVC,
-                  with additional expertise in frontend development using HTML, CSS, JavaScript, and Bootstrap.
+                  Dedicated Software Engineer with experience in developing web
+                  and software applications using C, C++, C#, Python, and .NET
+                  technologies. Knowledgeable in Entity Framework, SQL, and MVC,
+                  with additional expertise in frontend development using HTML,
+                  CSS, JavaScript, and Bootstrap.
                 </p>
                 <p>
-                  Passionate about continuous learning, problem-solving, and building practical software solutions.
-                  Currently pursuing a degree in Computer and Artificial Intelligence at Helwan University.
+                  Passionate about continuous learning, problem-solving, and
+                  building practical software solutions. Currently pursuing a
+                  degree in Computer and Artificial Intelligence at Helwan
+                  University.
                 </p>
                 <p>
-                  When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects,
-                  and sharpening my skills through hands-on training and collaborative team projects.
+                  When I'm not coding, I enjoy exploring new technologies,
+                  contributing to open-source projects, and sharpening my skills
+                  through hands-on training and collaborative team projects.
                 </p>
               </div>
             </section>
 
-
-
             {/* Experience */}
             <section
               id="experience"
-              ref={(el) => { sectionRefs.current.experience = el; }}
+              ref={(el) => {
+                sectionRefs.current.experience = el;
+              }}
               className="group/section mb-24 scroll-mt-24"
             >
               <h2 className="mb-4 text-sm font-bold uppercase tracking-widest text-foreground lg:hidden">
@@ -167,7 +178,13 @@ const Index = () => {
                   title="Web Development Intern"
                   company="ITI Summer Code Camp"
                   description="Gained hands-on experience in C#, ASP.NET MVC, Entity Framework, and SQL basics. Built and tested web applications, integrating frontend with backend systems. Collaborated in a team environment, applying software engineering concepts like OOP and design patterns."
-                  tags={["C#", "ASP.NET MVC", "Entity Framework", "SQL", "Bootstrap"]}
+                  tags={[
+                    "C#",
+                    "ASP.NET MVC",
+                    "Entity Framework",
+                    "SQL",
+                    "Bootstrap",
+                  ]}
                 />
                 <ExperienceCard
                   date="Sep 2022 — Sep 2023"
@@ -182,7 +199,9 @@ const Index = () => {
             {/* Projects */}
             <section
               id="projects"
-              ref={(el) => { sectionRefs.current.projects = el; }}
+              ref={(el) => {
+                sectionRefs.current.projects = el;
+              }}
               className="group/section mb-24 scroll-mt-24"
             >
               <h2 className="mb-4 text-sm font-bold uppercase tracking-widest text-foreground lg:hidden">
@@ -192,7 +211,14 @@ const Index = () => {
                 <ProjectCard
                   title="Swift Air — Airline Management System"
                   description="Designed and developed a web-based airline management system to streamline flight operations and passenger management. Built using ASP.NET MVC, Entity Framework, and SQL. Implemented flight scheduling, passenger registration, and boarding management with a complete System User Guide."
-                  tags={["ASP.NET MVC", "Entity Framework", "SQL", "OOP", "Design Patterns"]}
+                  tags={[
+                    "ASP.NET MVC",
+                    "Entity Framework",
+                    "SQL",
+                    "OOP",
+                    "Design Patterns",
+                  ]}
+                  link="https://github.com/TomasNageh"
                 />
                 <ProjectCard
                   title="E-Commerce Website"
@@ -213,15 +239,30 @@ const Index = () => {
             <footer className="text-sm text-dimmer">
               <p>
                 Built with{" "}
-                <a href="https://react.dev" className="font-medium text-dim hover:text-primary" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://react.dev"
+                  className="font-medium text-dim hover:text-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   React
                 </a>{" "}
                 and{" "}
-                <a href="https://tailwindcss.com" className="font-medium text-dim hover:text-primary" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://tailwindcss.com"
+                  className="font-medium text-dim hover:text-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Tailwind CSS
                 </a>
                 . Inspired by{" "}
-                <a href="https://brittanychiang.com" className="font-medium text-dim hover:text-primary" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://brittanychiang.com"
+                  className="font-medium text-dim hover:text-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Brittany Chiang
                 </a>
                 .
