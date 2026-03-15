@@ -60,7 +60,7 @@ const Index = () => {
 
               <nav className="mt-16 hidden lg:block">
                 {sections.map((section) => (
-                  <NavLink
+                  <SectionNavLink
                     key={section}
                     href={`#${section}`}
                     label={section}
