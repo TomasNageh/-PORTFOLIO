@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Github, Mail, Phone } from "lucide-react";
 import Spotlight from "@/components/Spotlight";
-import NavLink from "@/components/NavLink";
+import SectionNavLink from "@/components/SectionNavLink";
 import ExperienceCard from "@/components/ExperienceCard";
 import ProjectCard from "@/components/ProjectCard";
 
