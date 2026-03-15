@@ -4,16 +4,14 @@ import Spotlight from "@/components/Spotlight";
 import SectionNavLink from "@/components/SectionNavLink";
 import ExperienceCard from "@/components/ExperienceCard";
 import ProjectCard from "@/components/ProjectCard";
-import SkillsSection from "@/components/SkillsSection";
 
-const sections = ["about", "skills", "experience", "projects"] as const;
+const sections = ["about", "experience", "projects"] as const;
 type Section = (typeof sections)[number];
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState<Section>("about");
   const sectionRefs = useRef<Record<Section, HTMLElement | null>>({
     about: null,
-    skills: null,
     experience: null,
     projects: null,
   });
@@ -145,17 +143,7 @@ const Index = () => {
               </div>
             </section>
 
-            {/* Skills */}
-            <section
-              id="skills"
-              ref={(el) => { sectionRefs.current.skills = el; }}
-              className="mb-24 scroll-mt-24"
-            >
-              <h2 className="mb-4 text-sm font-bold uppercase tracking-widest text-foreground lg:hidden">
-                Skills
-              </h2>
-              <SkillsSection />
-            </section>
+
 
             {/* Experience */}
             <section
