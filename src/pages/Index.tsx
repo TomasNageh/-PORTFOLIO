@@ -101,6 +101,17 @@ const Index = () => {
                   <Phone className="h-5 w-5" />
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/tomas-nageh-8bbaa6224/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-muted-foreground transition-colors hover:text-foreground"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
+              </li>
             </ul>
           </header>
 
