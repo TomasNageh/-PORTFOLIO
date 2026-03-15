@@ -143,17 +143,7 @@ const Index = () => {
               </div>
             </section>
 
-            {/* Skills */}
-            <section
-              id="skills"
-              ref={(el) => { sectionRefs.current.skills = el; }}
-              className="mb-24 scroll-mt-24"
-            >
-              <h2 className="mb-4 text-sm font-bold uppercase tracking-widest text-foreground lg:hidden">
-                Skills
-              </h2>
-              <SkillsSection />
-            </section>
+
 
             {/* Experience */}
             <section
