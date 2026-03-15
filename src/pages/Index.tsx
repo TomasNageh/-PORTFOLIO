@@ -12,7 +12,6 @@ const Index = () => {
   const [activeSection, setActiveSection] = useState<Section>("about");
   const sectionRefs = useRef<Record<Section, HTMLElement | null>>({
     about: null,
-    skills: null,
     experience: null,
     projects: null,
   });
