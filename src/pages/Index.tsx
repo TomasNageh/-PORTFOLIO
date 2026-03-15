@@ -4,8 +4,9 @@ import Spotlight from "@/components/Spotlight";
 import SectionNavLink from "@/components/SectionNavLink";
 import ExperienceCard from "@/components/ExperienceCard";
 import ProjectCard from "@/components/ProjectCard";
+import SkillsSection from "@/components/SkillsSection";
 
-const sections = ["about", "experience", "projects"] as const;
+const sections = ["about", "skills", "experience", "projects"] as const;
 type Section = (typeof sections)[number];
 
 const Index = () => {
