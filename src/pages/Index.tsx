@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Github, Mail, Phone } from "lucide-react";
+import { Github, Mail, Phone, Linkedin } from "lucide-react";
 import Spotlight from "@/components/Spotlight";
 import SectionNavLink from "@/components/SectionNavLink";
 import ExperienceCard from "@/components/ExperienceCard";
